@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Search City"
+                class="form-control"
+                autofocus="on"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary"
+              />
+            </div>
+          </div>
+        </form>
+
+        <h1>Lisbon</h1>
+        <h6>
+          Saturday 16:41
+          <br />
+          Cloudy
+        </h6>
+        <br />
+        <br />
+
+        <div class="row attributes">
+          <div class="col-sm">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+              alt="Partly Cloudy icon"
+              width="75"
+              class="weather-icon"
+            />
+          </div>
+          <div class="col-sm"><strong>14 </strong>°C | °F</div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="row attributes">
+          <div class="col-sm"><span>1% </span> <br />Precipitation</div>
+          <div class="col-sm"><span>57% </span> <br />Humidity</div>
+          <div class="col-sm"><span>16 km/h </span> <br />Wind</div>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <div class="container">
+          <div class="row weekday-weather">
+            <div class="col monday-weather">
+              <span>Saturday⛅</span> <br />14°C<br />
+            </div>
+            <div class="col tuesday-weather">
+              <span>Sunday ⛅</span> <br />15°C<br />
+            </div>
+            <div class="col wednesday-weather">
+              <span>Monday⛅</span> <br />13°C<br />
+            </div>
+            <div class="col thursday-weather">
+              <span>Thrusday⛅</span> <br />14°C<br />
+            </div>
+            <div class="col friday-weather">
+              <span>Wednesday⛅</span> <br />12°C<br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
