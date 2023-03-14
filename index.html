@@ -16,7 +16,7 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <div class="row">
             <div class="col-9">
               <input
@@ -24,24 +24,32 @@
                 placeholder="Search City"
                 class="form-control"
                 autofocus="on"
+                id="city-input"
+                class="form-control shadow-sm"
               />
             </div>
             <div class="col-3">
               <input
                 type="submit"
                 value="Search"
-                class="form-control btn btn-primary"
+                class="form-control btn btn-primary shadow-sm"
               />
+
+              <div>
+                <button
+                  class="btn btn-success w-100"
+                  id="current-location-button"
+                >
+                  Current
+                </button>
+              </div>
             </div>
           </div>
         </form>
 
-        <h1>Lisbon</h1>
-        <h6>
-          Saturday 16:41
-          <br />
-          Cloudy
-        </h6>
+        <h1 id="city"></h1>
+        <h6 id="date"><br />Cloudy</h6>
+        <h6 id="description"><br /></h6>
         <br />
         <br />
 
@@ -54,16 +62,25 @@
               class="weather-icon"
             />
           </div>
-          <div class="col-sm"><strong>14 </strong>°C | °F</div>
+          <div
+            class="col-sm"
+            class="float-left"
+            class="temperature"
+            id="temperature"
+          ></div>
+          <span class="units">
+            <a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a>
+          </span>
         </div>
         <br />
         <br />
         <br />
 
         <div class="row attributes">
-          <div class="col-sm"><span>1% </span> <br />Precipitation</div>
-          <div class="col-sm"><span>57% </span> <br />Humidity</div>
-          <div class="col-sm"><span>16 km/h </span> <br />Wind</div>
+          <div class="col-sm"><span id="pressure"></span>% <br />pressure</div>
+          <div class="col-sm"><span id="humidity"></span><br />Humidity</div>
+          <div class="col-sm"><span id="wind"></span>% <br />Wind</div>
         </div>
         <br />
         <br />
@@ -89,10 +106,6 @@
         </div>
       </div>
     </div>
-    <p class="footer"> 
-        <a href="https://github.com/DeboraCesar/weather-app" target="_blank"> Open-source code</a>
-        ,by Debora Cesar
-    </p>
     <script src="src/index.js"></script>
   </body>
 </html>  
