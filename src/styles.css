@@ -1,110 +1,102 @@
-body{
+body {
     font-family: Google Sans, arial, sans-serif;
     background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-cloud-background_41066-1948.jpg?w=996&t=st=1676138187~exp=1676138787~hmac=fe226c79a64a96c00ec08915ddc3896b154278b04b91e6abb8cfb705bc757d65);
-}
-
-
-h1{
+  }
+  
+  h1 {
     color: #202124;
     font-size: 22px;
     line-height: 26px;
     margin: 0;
     font-weight: 400;
-
-    
-}
-
-ul{
+  }
+  
+  ul {
     padding: 0 0 10px;
-    margin:0;
+    margin: 0;
     text-align: center;
-    
-}
-li{
+  }
+  li {
     color: #70757a;
-        display: inline-block;
-        font-size: 12px;
-        line-height: 16px;
-        padding-left: 9px;
-        padding-top: 6px;
-        display: inline-block;
-        list-style: none;
-        
-}
-
-.weather-app{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 9px;
+    padding-top: 6px;
+    display: inline-block;
+    list-style: none;
+  }
+  
+  .weather-app {
     border: 1px solid #dadde1;
     padding: 15px;
-    margin:20px auto;
+    margin: 20px auto;
     max-width: 600px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);;
-}
-.temperature{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .temperature {
     font-weight: 400;
     letter-spacing: normal;
     font-size: 48px;
     letter-spacing: 0;
     line-height: 56px;
-    
-}
-.weather-icon{
+  }
+  .weather-icon {
     margin-right: 90px;
-
-
-}
-.search-form{
+  }
+  .search-form {
     margin-bottom: 20px;
-}
-.attributes {
+  }
+  .attributes {
     text-align: center;
     color: black;
     text-shadow: 2px 0px 10px grey;
     font-size: 18px;
-}
-
-
-.monday-weather {
+  }
+  
+  .monday-weather {
     text-align: center;
     border-radius: 10px;
     background-color: rgb(201, 215, 234);
     height: 130px;
     margin-right: 5px;
     line-height: 40px;
-}
-
-.tuesday-weather {
+  }
+  
+  .tuesday-weather {
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(201, 215, 234);;
+    background-color: rgb(201, 215, 234);
     height: 130px;
     margin-right: 5px;
     line-height: 40px;
-}
-
-.wednesday-weather {
+  }
+  
+  .wednesday-weather {
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(201, 215, 234);;
+    background-color: rgb(201, 215, 234);
     height: 130px;
     margin-right: 5px;
     line-height: 40px;
-}
-
-.thursday-weather {
+  }
+  
+  .thursday-weather {
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(201, 215, 234);;
+    background-color: rgb(201, 215, 234);
     height: 130px;
     margin-right: 5px;
     line-height: 40px;
-}
-
-.friday-weather {
+  }
+  
+  .friday-weather {
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(201, 215, 234);;
+    background-color: rgb(201, 215, 234);
     height: 130px;
     margin-right: 5px;
     line-height: 40px;
-}
+  }
+  
