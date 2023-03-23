@@ -49,30 +49,27 @@
         </form>
 
         <h1 id="city"></h1>
-        <h6 id="date"><br />Cloudy</h6>
+        <h6 id="date"><br /></h6>
         <h6 id="description"><br /></h6>
         <br />
         <br />
 
         <div class="row attributes">
           <div class="col-sm">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-              alt="Partly Cloudy icon"
-              width="75"
-              class="weather-icon"
-            />
+            <div class="clearfix weather-temperature">
+              <img src="" alt="Clear" id="icon" class="float-left" />
+              <div class="float-left">
+                <strong id="temperature"></strong>
+                <span class="units">
+                  <a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
           </div>
-          <div
+        <div
             class="col-sm"
             class="float-left"
             class="temperature"
             id="temperature"
           ></div>
-          <span class="units">
-            <a href="#" id="celsius-link">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a>
-          </span>
         </div>
         <br />
         <br />
@@ -80,33 +77,19 @@
 
         <div class="row attributes">
           
-          <div class="col-sm"><span id="humidity"></span><br />Humidity</div>
-          <div class="col-sm"><span id="wind"></span>% <br />Wind</div>
+          <div class="col-sm"><span id="humidity"></span>%<br />Humidity</div>
+          <div class="col-sm"><span id="wind"></span> km/h <br />Wind</div>
         </div>
         <br />
         <br />
-        <hr />
-        <div class="container">
-          <div class="row weekday-weather">
-            <div class="col monday-weather">
-              <span>Saturday⛅</span> <br />14°C<br />
-            </div>
-            <div class="col tuesday-weather">
-              <span>Sunday ⛅</span> <br />15°C<br />
-            </div>
-            <div class="col wednesday-weather">
-              <span>Monday⛅</span> <br />13°C<br />
-            </div>
-            <div class="col thursday-weather">
-              <span>Thrusday⛅</span> <br />14°C<br />
-            </div>
-            <div class="col friday-weather">
-              <span>Wednesday⛅</span> <br />12°C<br />
-            </div>
-          </div>
+          <div class="weather-forecast" id="forecast">
         </div>
       </div>
     </div>
+    <hr />
+    <footer>
+      <a href="https://github.com/DeboraCesar/vanilla-weather-app" target="_blank">Open-source code</a> Debora Cesar
+    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>  
